@@ -1,0 +1,51 @@
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+
+# Build folders
+Debug/
+Release/
+x64/
+x86/
+
+# Intermediate files
+*.obj
+*.iobj
+*.ipdb
+*.pch
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.lastbuildstate
+
+# Executables and libraries
+*.exe
+*.dll
+*.lib
+*.exp
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# CMake (if used in the future)
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# Generated logs
+*.log
+
+# Test results
+TestResults/
+
+# NuGet
+packages/
+
+# Windows thumbnails
+Thumbs.db
+Desktop.ini
