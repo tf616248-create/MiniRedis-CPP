@@ -50,9 +50,22 @@ void HandleClient(SOCKET clientSocket, DataStore& store)
 
         if (action == "SET")
         {
-            std::string key, value;
+            std::string key;
+            std::string value;
+
             ss >> key >> value;
-            store.set(key, value);
+
+            std::string ex;
+            int ttl;
+
+            if (ss >> ex >> ttl && ex == "EX")
+            {
+                store.set(key, value, ttl);
+            }
+            else
+            {
+                store.set(key, value);
+            }
             response = "OK";
         }
         else if (action == "GET")
